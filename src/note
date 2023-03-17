@@ -1,0 +1,15 @@
+public class Main {
+    public static void main(String[] args) {
+        int number = 15;
+        boolean isDivisibleByThreeAndFive = checkIfNumberIsDivisibleByThreeAndFive(number);
+        if (isDivisibleByThreeAndFive) {
+            System.out.println(number + " jest podzielna przez 3 i 5.");
+        } else {
+            System.out.println(number + " nie jest podzielna przez 3 i 5.");
+        }
+    }
+
+    public static boolean checkIfNumberIsDivisibleByThreeAndFive(int number) {
+        return (number % 3 == 0 && number % 5 == 0);
+    }
+}
